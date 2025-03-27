@@ -331,9 +331,6 @@ quest_Note_1.quest_Show_String_For_Note_Small_Func(
 )
 display.rotateTo(display.Direction.UpsideDown)
 quest_Note_1.quest_Show_String_For_Note_Big_Func(
-"©️ 2025 Quest Institute. All rights reserved."
-)
-quest_Note_1.quest_Show_String_For_Note_Big_Func(
 "Setup Code for Student Below:"
 )
 quest_Note_1.quest_Show_String_For_Note_Small_Func(
@@ -345,3 +342,11 @@ quest_Note_1.quest_Show_String_For_Note_Small_Func(
 quest_Note_1.quest_Show_String_For_Note_Small_Func(
 "display most current coordinates"
 )
+basic.forever(function () {
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "Ver 0.2.0: 25-0326-1750"
+    )
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "©️ 2025 Quest Institute. All rights reserved."
+    )
+})
