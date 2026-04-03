@@ -1,3 +1,12 @@
+function Move_1_Block () {
+    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
+    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
+    50,
+    50,
+    quest_Turn_Duration_Enum.msec_2000,
+    quest_Debug_Show_Enum.Off
+    )
+}
 input.onButtonPressed(Button.A, function () {
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
     "set variable \"number\" to count up by 1"
@@ -8,15 +17,6 @@ input.onButtonPressed(Button.A, function () {
     )
     showCoordinate()
 })
-function Move_1_Block () {
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-    50,
-    50,
-    quest_Turn_Duration_Enum.msec_2000,
-    quest_Debug_Show_Enum.Off
-    )
-}
 input.onButtonPressed(Button.AB, function () {
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
     "clear screen and reset letter and number to 0,0"
@@ -409,9 +409,9 @@ quest_Note_1.quest_Show_String_For_Note_Small_Func(
 showCoordinate()
 basic.forever(function () {
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
-    "Ver 0.1.0: 25-0401-1930"
+    "Ver 0.1.1: 26-0402-1720"
     )
     quest_Note_1.quest_Show_String_For_Note_Small_Func(
-    "©️ 2025 Quest Institute. All rights reserved."
+    "©️ 2026 Quest Institute. All rights reserved."
     )
 })
